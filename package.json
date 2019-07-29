@@ -1,0 +1,71 @@
+{
+  "name": "annic-cli",
+  "description": "Utility helps to make local build easier for full price sites",
+  "version": "1.0.0",
+  "author": "shanmugharajk",
+  "bin": {
+    "annic-cli": "./bin/run"
+  },
+  "bugs": "https://github.com/Cli/annic-cli/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "chalk": "^2.4.2",
+    "fs-extra": "^8.1.0",
+    "open": "^6.4.0",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@oclif/test": "^1",
+    "@oclif/tslint": "^3",
+    "@types/chai": "^4",
+    "@types/fs-extra": "^8.0.0",
+    "@types/mocha": "^5",
+    "@types/node": "^10",
+    "chai": "^4",
+    "globby": "^10",
+    "mocha": "^5",
+    "nyc": "^13",
+    "ts-node": "^8",
+    "tslint": "^5",
+    "typescript": "^3.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "homepage": "https://github.com/Cli/annic-cli",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "annic-cli",
+    "plugins": [
+      "@oclif/plugin-help"
+    ],
+    "macos": {
+      "identifier": "com.annic.cli"
+    }
+  },
+  "repository": "Cli/annic-cli",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "posttest": "tslint -p test -t stylish",
+    "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif-dev readme && git add README.md",
+    "pack-macos": "oclif-dev pack:macos",
+    "pack-winos": "oclif-dev pack:win"
+  },
+  "types": "lib/index.d.ts"
+}
