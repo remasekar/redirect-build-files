@@ -53,7 +53,7 @@ export default {
         replace: [
             {
                 from: "https://${pageContext.request.serverName}",
-                to: "http://127.0.0.1:8080`"
+                to: "http://127.0.0.1:8080"
             }
         ]
     }

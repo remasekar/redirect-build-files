@@ -9,9 +9,9 @@ export default {
 
     war: "grunt war-lg",
 
-    "lg.war": "[repoBase]${_}backend${_}lgpl.war",
+    "lg.war": `[repoBase]${_}backend${_}lgpl.war`,
 
-    "webassets.war": "[repoBase]${_}backend${_}webassets.war",
+    "webassets.war": `[repoBase]${_}backend${_}webassets.war`,
 
     "context-dev": {
         path: `[repoBase]${_}grunt-config${_}ctx${_}context-dev-lg.json`,
