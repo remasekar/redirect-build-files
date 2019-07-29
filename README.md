@@ -5,6 +5,7 @@ Utility helps to make local build easier for full price sites
 
 <!-- toc -->
 * [Commands](#commands)
+* [Edit config file](#edit-config-file)
 <!-- tocstop -->
 
 # Commands
