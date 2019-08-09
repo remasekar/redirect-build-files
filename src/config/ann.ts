@@ -17,7 +17,7 @@ export default {
     path: `[repoBase]${_}grunt-config${_}ctx${_}context-dev-ann.json`,
     replace: [
       {
-        from: 'stage.r.anntaylor.com',
+        from: 'stage2.r.anntaylor.com',
         to: 'stage.r.anntaylor.com'
       },
       {

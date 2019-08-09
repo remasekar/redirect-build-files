@@ -19,11 +19,11 @@ export default {
     replace: [
       {
         from: 'stage2.loft.com',
-        to: 'dev2.r.loft.com'
+        to: 'stage.r.loft.com'
       },
       {
         from: 'stage2.loft.com',
-        to: 'dev2.r.loft.com'
+        to: 'stage.r.loft.com'
       }
     ]
   },
@@ -34,7 +34,7 @@ export default {
     replace: [
       {
         from: 'defaultEnvironment:location.host',
-        to: "defaultEnvironment:'dev2.r.loft.com'"
+        to: "defaultEnvironment:'stage.r.loft.com'"
       }
     ]
   },
