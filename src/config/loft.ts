@@ -19,11 +19,11 @@ export default {
     replace: [
       {
         from: 'stage2.loft.com',
-        to: 'stage.r.loft.com'
+        to: 'loft.r.com'
       },
       {
         from: 'stage2.loft.com',
-        to: 'stage.r.loft.com'
+        to: 'loft.r.com'
       }
     ]
   },
@@ -34,7 +34,7 @@ export default {
     replace: [
       {
         from: 'defaultEnvironment:location.host',
-        to: "defaultEnvironment:'stage.r.loft.com'"
+        to: "defaultEnvironment:'loft.r.com'"
       }
     ]
   },
@@ -58,7 +58,7 @@ export default {
         // tslint:disable-next-line: no-invalid-template-strings
         from: 'https://${pageContext.request.serverName}',
         // tslint:disable-next-line: no-http-string
-        to: 'http://127.0.0.1:8080'
+        to: 'http://loft.r.com:8080'
       }
     ]
   }

@@ -18,11 +18,11 @@ export default {
     replace: [
       {
         from: 'stage2.r.anntaylor.com',
-        to: 'stage.r.anntaylor.com'
+        to: 'anntaylor.r.com'
       },
       {
         from: 'stage.r.anntaylor.com',
-        to: 'stage.r.anntaylor.com'
+        to: 'anntaylor.r.com'
       }
     ]
   },
@@ -32,7 +32,7 @@ export default {
     replace: [
       {
         from: 'defaultEnvironment:location.host',
-        to: "defaultEnvironment:'stage.r.anntaylor.com'"
+        to: "defaultEnvironment:'anntaylor.r.com'"
       }
     ]
   },
@@ -55,7 +55,7 @@ export default {
         // tslint:disable-next-line: no-invalid-template-strings
         from: 'https://${pageContext.request.serverName}',
         // tslint:disable-next-line: no-http-string
-        to: 'http://127.0.0.1:8080'
+        to: 'http://anntaylor.r.com'
       }
     ]
   }
