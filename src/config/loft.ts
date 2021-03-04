@@ -18,12 +18,12 @@ export default {
 
     replace: [
       {
-        from: 'stage2.loft.com',
-        to: 'loft.r.com'
+        from: 'stage2.r.loft.com',
+        to: 'breakfix.r.loft.com'
       },
       {
-        from: 'stage2.loft.com',
-        to: 'loft.r.com'
+        from: 'stage.r.loft.com',
+        to: 'breakfix.r.loft.com'
       }
     ]
   },

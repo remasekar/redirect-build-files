@@ -18,11 +18,11 @@ export default {
     replace: [
       {
         from: 'stage2.r.anntaylor.com',
-        to: 'stage.r.anntaylor.com'
+        to: 'breakfix.r.anntaylor.com'
       },
       {
-        from: 'stage.r.anntaylor.com',
-        to: 'stage.r.anntaylor.com'
+        from: 'stage2.r.anntaylor.com',
+        to: 'breakfix.r.anntaylor.com'
       }
     ]
   },
@@ -32,7 +32,7 @@ export default {
     replace: [
       {
         from: 'defaultEnvironment:location.host',
-        to: "defaultEnvironment:'stage.r.anntaylor.com'"
+        to: "defaultEnvironment:'stage2.r.anntaylor.com'"
       }
     ]
   },
